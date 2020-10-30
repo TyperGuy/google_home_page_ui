@@ -1,0 +1,162 @@
+*, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header #menu_avatar {
+  width: 40px;
+  height: 40px;
+}
+
+#menu {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu_left, #menu_right {
+  display: flex;
+  align-items: center;
+}
+
+#menu_left, #menu_icon {
+  padding: 12px 16px;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  padding: 12px 8px;
+}
+
+#active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+a:not(#active) {
+  color: #4285f4;
+  border-bottom: 2px solid transparent;
+}
+
+#menu_right {
+  margin-right: 4px;
+}
+
+#menu_right #menu_icon {
+  padding: 12px;
+}
+
+#menu_right #menu_profile {
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#menu_right #menu_profile #menu_avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#menu_right #menu_frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*  Main */
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 8px 0;
+  flex: 1;
+}
+
+#content_logo {
+  height: 56px;
+}
+
+.content_search {
+  margin-top: 18px;
+  width: 100%;
+  padding: 7px 10px 6px 20px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #dadce0;
+}
+
+#content_offer {
+  margin-top: 24px;
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+/*Footer*/
+
+footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+
+footer div:not(:first-child) {
+  border-top: 1px solid #e4e4e4;
+}
+
+#footer_location {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 10px 12px;
+}
+
+#footer_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#footer_links a {
+  color: #5f6368;
+}
+
+#footer_links a:not(:first-child) {
+  margin-left: 27px;
+}
+
+@media(min-width:763px) {
+  #content {
+    padding-top: 120px;
+  }
+  #content_logo {
+    height: 150px;
+  }
+  .content_search {
+    width: 50%;
+  }
+}

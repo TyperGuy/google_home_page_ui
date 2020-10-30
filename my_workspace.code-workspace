@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../validation_form"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "google_home_page_ui"
+	}
+}
